@@ -109,3 +109,93 @@
 #  `~`       ------     NOT (1’s complement)  ------  `~5`      -----     `-6`   
 #  `<<`      ------     Left shift            ------  `5 << 1`  -----     `10`   
 #  `>>`      ------     Right shift           ------  `5 >> 1`  -----     `2`    
+
+#! sort() & sorted()
+# * Sort  
+# Ye original list ko hi change kar deta hai.
+# Koi nayi list return nahi karta.
+a = [3, 1, 2]
+a.sort()
+print(a)   # Output: [1, 2, 3]
+
+# * Sorted
+# Ye nayi sorted list banata hai.
+# Original list waise ki waise rehti hai.
+a = [3, 1, 2]
+b = sorted(a)
+print(a)   # Output: [3, 1, 2]
+print(b)   # Output: [1, 2, 3]
+
+#! Break - Continue - Pass 
+# * Break
+# Loop ko foran rok deta hai.
+for i in range(5):
+    if i == 3:
+        break
+    print(i) # output -- 0 1 2
+
+# * Continue
+# Current iteration skip karta hai, next pe chala jata hai.
+for i in range(5):
+    if i == 3:
+        continue
+    print(i) # output 0 1 2 4 ( skip 3 )
+
+# * pass   
+# Kuch nahi karta — placeholder hota hai. yai bas program ko bugs se bachany kay liay hota hai. ham program likhty hain or pass likh dety hain, in future program mai kuch changes yai program ko jab complete krty hain to isy hata dety hain.
+for i in range(5):
+    pass
+
+#! String Concept
+
+s1 = 'Hello'
+s2 = "World"
+s3 = '''This is
+a multiline string'''
+
+#!  2. String Properties
+# ✅ Ordered
+# ✅ Iterable
+# ✅ Immutable
+# ✅ Supports indexing and slicing
+
+#! 3. String Indexing and Slicing 
+s = "Python"
+print(s[0])     # P
+print(s[-1])    # n
+print(s[0:3])   # Pyt
+print(s[::-1])  # nohtyP
+
+# ! 4. String Immutability
+# Strings can't be changed after creation. 
+s = "Hello"
+s[0] = 'h'  # ❌ Error
+
+#! 6. String Methods
+#!  Method                                     | Description             -----  Example                         
+#  `.lower()`                                 | Lowercase               -----  `'PYTHON'.lower()` → `'python'` 
+#  `.upper()`                                 | Uppercase               -----  `'python'.upper()` → `'PYTHON'` 
+#  `.title()`                                 | Capitalize each word    -----  `'hello world'.title()`         
+#  `.capitalize()`                            | Capitalize first letter -----  `'hello'.capitalize()`          
+#  `.strip()`                                 | Removes whitespace      -----  `'  hi  '.strip()`              
+#  `.replace(a, b)`                           | Replace `a` with `b`    -----  `'hello'.replace('l', '*')`     
+#  `.find(sub)`                               | Returns index           -----  `'apple'.find('p')`             
+#  `.count(sub)`                              | Count occurrences       -----  `'banana'.count('a')`           
+#  `.split(sep)`                              | Returns list            -----  `'a,b,c'.split(',')`            
+#  `.join(iter)`                              | Joins elements          -----  `'-'.join(['a','b']) → 'a-b'`   
+#  `.startswith()` / `.endswith()`            | Bool                    -----  `'abc'.startswith('a')`         
+#  `.isdigit()` / `.isalpha()` / `.isalnum()` | Check type              -----  `'123'.isdigit()`               
+
+#!  7. f-Strings (Formatting)
+name = "Ali"
+age = 25
+print(f"My name is {name} and I am {age} years old.")
+
+#!  8. Useful Built-in Functions 
+len("hello")        # 5
+max("abc")          # 'c'
+min("abc")          # 'a'
+ord('A')            # 65
+chr(65)             # 'A'
+
+#! 
