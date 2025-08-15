@@ -200,3 +200,25 @@ chr(65)             # 'A'
 # ------- End ---------
 
 #! List 
+#!  Method          Purpose                                        Example                              Output
+#  `append(x)`     End mein item add karta hai              `lst = [1, 2]; lst.append(3)`            `[1, 2, 3]`
+
+#  `insert(i, x)`  Index `i` par item insert karta hai      `lst = [1, 3]; lst.insert(1, 2)`         `[1, 2, 3]`
+
+#  `remove(x)`     Pehli baar jo `x` mile usay remove kare  `lst = [1, 2, 2]; lst.remove(2)`         `[1, 2]`
+
+#  `pop(i)`        Index `i` se item remove + return karta  `lst = [1, 2, 3]; lst.pop(1)`            `2`, list: `[1, 3]`
+
+#  `sort()`        List ko ascending order mein sort karta  `lst = [3, 1, 2]; lst.sort()`            `[1, 2, 3]` 
+
+#  `reverse()`     List ko ulta (reverse) karta hai         `lst = [1, 2, 3]; lst.reverse()`         `[3, 2, 1]`
+
+#  `index(x)`      `x` ki pehli position return karta hai   `lst = ['a', 'b', 'a']; lst.index('a')`  `0` 
+
+#  `count(x)`      `x` kitni dafa aya, woh count karta hai  `lst = [1, 2, 2, 3]; lst.count(2)`       `2` 
+
+#  `extend(iter)`  List mein multiple items add karta hai   `lst = [1]; lst.extend([2, 3])`          `[1, 2, 3]`
+
+#  `clear()`       Saari list empty (clear) karta hai       `lst = [1, 2]; lst.clear()`              `[]`
+
+#  `copy()`        List ka ek copy banata hai               `new = lst.copy()`                    `new` same as `lst` |
