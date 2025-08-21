@@ -1,0 +1,5 @@
+Summary of Generators 
+Generator = function with yield.
+Works like iterator, ek-ek value deta hai.
+Memory efficient, lazy evaluation.
+Used for big data, streams, files, pipelines.
